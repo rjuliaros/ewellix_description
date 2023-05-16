@@ -35,4 +35,12 @@
     
     </xacro:if>
 
+    <xacro:if value="${lift_selector == 'lift_500mm'}">
+
+        <xacro:ewellix_lift_500mm prefix="$(arg prefix)" parent ="$(arg base_frame)" cut_model = "$(arg cut_model)" >
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </xacro:ewellix_lift_500mm>
+    
+    </xacro:if>
+
 </robot>
